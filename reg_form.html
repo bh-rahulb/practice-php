@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .input {
+            margin: 15px 0;
+        }
+
+        .input input {
+            width: 100%;
+            padding: 5px 8px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="reg_form.php" method='post'>
+        <h2 style='text-align: center;'>Registration Form</h2>
+        <div class='input'>
+            <input type="text" name='user_name' placeholder='Enter Name'>
+        </div>
+        <div class='input'>
+            <input type="password" name='user_password' placeholder='Enter Password'>
+        </div>
+        <div class='btn'>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

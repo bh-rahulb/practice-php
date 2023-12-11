@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        search : <input type="text" placeholder="search anything" onkeyup="showhint(this.value)"><br><br>
+    </form>
+
+    <p>suggestion : <span id="txthint"></span></p>
+    <script>
+        function showhint(str) {
+            if (str.length == 0) {
+                document.getElementById("txthint").innerHTML = "";
+                return;
+            } else {
+                let a = new XMLHttpRequest();
+                a.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("txthint").innerHTML = this.responseText;
+                    }
+                };
+                a.open("GET", "hints.php?q=" + str);
+                a.send();
+            }
+        }
+    </script>
+</body>
+
+</html>

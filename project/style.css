@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+body {
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h5 {
+    font-family: 'Roboto Slab', serif;
+    color: aliceblue;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.shade {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+}
+
+.menu-link {
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.menu-link:hover {
+    color: greenyellow;
+    border-color: greenyellow;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search-input {
+    background-color: darkcyan;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    padding: 3px 8px;
+    width: 175px;
+}
+
+.search-input:focus {
+    outline: 0;
+}
+
+.search-btn {
+    border: none;
+    background-color: cyan;
+    border-radius: 0 4px 4px 0;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+form {
+    width: 650px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    margin: 10px 0;
+}
+
+.label {
+    width: 30%;
+}
+
+.input input {
+    margin-right: 10px;
+}
+
+span {
+    margin-left: 200px;
+    color: red;
+}
