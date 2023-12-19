@@ -41,7 +41,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
 include("foot.html");
 
 if($_SERVER['REQUEST_METHOD']== 'POST'){
-    if(empty($password_err)){
+    if(empty($c_password_err)){
         header("location:city.php");
 
     }
